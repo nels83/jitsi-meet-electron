@@ -52,21 +52,21 @@ function setApplicationMenu() {
         const template = [ {
             label: app.getName(),
             submenu: [ {
-                label: 'Quit',
+                label: 'Quitter Jitsi Meet',
                 accelerator: 'Command+Q',
                 click() {
                     app.quit();
                 }
             } ]
         }, {
-            label: 'Edit',
+            label: 'Édition',
             submenu: [ {
-                label: 'Undo',
+                label: 'Annuler',
                 accelerator: 'CmdOrCtrl+Z',
                 selector: 'undo:'
             },
             {
-                label: 'Redo',
+                label: 'Rétablir',
                 accelerator: 'Shift+CmdOrCtrl+Z',
                 selector: 'redo:'
             },
@@ -74,22 +74,22 @@ function setApplicationMenu() {
                 type: 'separator'
             },
             {
-                label: 'Cut',
+                label: 'Couper',
                 accelerator: 'CmdOrCtrl+X',
                 selector: 'cut:'
             },
             {
-                label: 'Copy',
+                label: 'Copier',
                 accelerator: 'CmdOrCtrl+C',
                 selector: 'copy:'
             },
             {
-                label: 'Paste',
+                label: 'Coller',
                 accelerator: 'CmdOrCtrl+V',
                 selector: 'paste:'
             },
             {
-                label: 'Select All',
+                label: 'Tout sélectionner',
                 accelerator: 'CmdOrCtrl+A',
                 selector: 'selectAll:'
             }

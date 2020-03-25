@@ -150,7 +150,7 @@ class Conference extends Component<Props, State> {
 
                 // $FlowFixMe
                 {
-                    error: 'Loading error',
+                    error: 'Erreur lors du chargement',
                     type: 'error'
                 },
                 room,

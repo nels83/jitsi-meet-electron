@@ -42,14 +42,15 @@ class ConferenceURLSpotlight extends Component<Props, *> {
                 actions = { [
                     {
                         onClick: this._next,
-                        text: 'Next'
+                        text: 'Suivant'
                     }
                 ] }
                 dialogPlacement = 'bottom center'
                 target = { 'conference-url' } >
-                Enter the name (or full URL) of the room you want to join. You
-                may make a name up, just let others know so they enter the same
-                name.
+                Entrez le nom ou l'URL de la salle que vous souhaitez
+                rejoindre. Vous pouvez faire un nom, laissez les
+                gens que vous rencontrerez le savoir afin qu'ils
+                entrent le même nom.
             </Spotlight>
         );
     }

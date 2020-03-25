@@ -37,6 +37,8 @@ class RecentList extends Component<Props, *> {
      * @returns {ReactElement}
      */
     render() {
+        moment.locale('fr');
+
         return (
             <RecentListContainer>
                 {

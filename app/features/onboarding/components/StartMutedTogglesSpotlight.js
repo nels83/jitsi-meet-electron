@@ -44,13 +44,14 @@ class StartMutedTogglesSpotlight extends Component<Props, *> {
                 actions = { [
                     {
                         onClick: this._next,
-                        text: 'Next'
+                        text: 'Suivant'
                     }
                 ] }
                 dialogPlacement = 'left top'
                 target = { 'start-muted-toggles' } >
-                You can toggle if you want to start with your audio or video
-                muted here. This will be applied to all conferences.
+                Vous pouvez basculer si vous voulez commencer avec votre
+                audio ou vidéo en sourdine ici. Ceci sera appliqué à toutes
+                les conférences.
             </Spotlight>
         );
     }

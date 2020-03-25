@@ -68,10 +68,10 @@ class ServerURLField extends Component<Props, State> {
             <form onSubmit = { this._onServerURLSubmit }>
                 <FieldTextStateless
                     invalidMessage
-                        = { 'Invalid Server URL or external API not enabled' }
+                        = { 'URL du serveur invalide ou API non activée' }
                     isInvalid = { !this.state.isValid }
                     isValidationHidden = { this.state.isValid }
-                    label = 'Server URL'
+                    label = 'URL du serveur'
                     onBlur = { this._onServerURLSubmit }
                     onChange = { this._onServerURLChange }
                     placeholder = { config.defaultServerURL }

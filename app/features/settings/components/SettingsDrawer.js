@@ -92,7 +92,7 @@ class SettingsDrawer extends Component<Props, *> {
     render() {
         return (
             <AkCustomDrawer
-                backIcon = { <ArrowLeft label = 'Back' /> }
+                backIcon = { <ArrowLeft label = 'Retour' /> }
                 isOpen = { this.props.isOpen }
                 onBackButton = { this._onBackButton }
                 primaryIcon = { <Logo /> } >
@@ -107,7 +107,7 @@ class SettingsDrawer extends Component<Props, *> {
                             name = 'name-setting'>
                             <form onSubmit = { this._onNameFormSubmit }>
                                 <FieldText
-                                    label = 'Name'
+                                    label = 'Pseudo'
                                     onBlur = { this._onNameBlur }
                                     shouldFitContainer = { true }
                                     type = 'text'

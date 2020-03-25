@@ -42,13 +42,13 @@ class ServerSettingSpotlight extends Component<Props, *> {
                 actions = { [
                     {
                         onClick: this._next,
-                        text: 'Next'
+                        text: 'Suivant'
                     }
                 ] }
                 dialogPlacement = 'left top'
                 target = { 'server-setting' } >
-                This will be the server where your conferences will take place.
-                You can use your own, but you don't need to!
+                Ce sera le serveur où vos conférences auront lieu. Vous pouvez
+                utiliser le vôtre, mais vous n'êtes pas obligé !
             </Spotlight>
         );
     }
