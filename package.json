@@ -1,5 +1,5 @@
 {
-  "name": "jitsi-meet-electron",
+  "name": "jitsi-meet-desktop",
   "version": "1.1.1",
   "description": "Electron application for Jitsi Meet",
   "main": "./build/main.js",
@@ -25,32 +25,46 @@
       "!app",
       "!main.js"
     ],
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
     "mac": {
-      "artifactName": "jitsi-meet.${ext}",
       "category": "public.app-category.video",
-      "darkModeSupport": true
+      "darkModeSupport": true,
+      "target": [
+        {
+          "target": "dmg"
+        }
+      ]
     },
     "linux": {
-      "artifactName": "jitsi-meet-${arch}.${ext}",
       "category": "VideoConference;AudioVideo;Audio;Video;Network",
-      "description": "Jitsi Meet Desktop App",
+      "description": "Jitsi Meet",
       "executableName": "jitsi-meet",
       "target": [
         {
-          "arch": "x64",
           "target": "AppImage"
+        },
+        {
+          "target": "deb"
+        },
+        {
+          "target": "rpm"
         }
       ]
     },
     "win": {
-      "artifactName": "jitsi-meet.${ext}",
       "target": [
         {
+          "target": "nsis",
           "arch": [
             "ia32",
             "x64"
-          ],
-          "target": "nsis"
+          ]
+        },
+        {
+          "target": "portable"
         }
       ]
     },
