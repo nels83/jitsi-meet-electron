@@ -63,7 +63,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/jitsi/jitsi-meet-electron"
+    "url": "git://github.com/nels83/jitsi-meet-electron"
   },
   "keywords": [
     "jingle",
