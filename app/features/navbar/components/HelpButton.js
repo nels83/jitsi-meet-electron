@@ -105,7 +105,7 @@ export default class HelpButton extends Component< *, State> {
                         À propos
                     </Item>
                     <Item>
-                        Version: { version }
+                        Version : { version }
                     </Item>
                 </Group>
             </Droplist>
